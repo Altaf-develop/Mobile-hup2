@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Yuth Mobile - Best Mobile & Smartwatch Deals in Your City. Genuine products, expert repair services, and accessories.">
+    <meta name="keywords"
+        content="Mobile shop near me, Best smartphone shop, Buy smartwatch, Mobile repair near me, Yuth Mobile">
+    <title>Yuth Mobile | Smartphones, Smartwatches & Repair Services</title>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobilePhoneStore",
+      "name": "Yuth Mobile",
+      "image": "https://images.unsplash.com/photo-1601784551446-20c9e07cd8d3?auto=format&fit=crop&q=80&w=1000",
+      "@id": "",
+      "url": "https://www.yuthmobile.com",
+      "telephone": "+919876543210",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Main Tech Street",
+        "addressLocality": "Your City",
+        "postalCode": "123456",
+        "addressCountry": "IN"
+      },
+      "priceRange": "$$"
+    }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-color: #FFD700;
+            /* Yellow / Gold */
+            --hover-color: #E5C100;
+            --dark-bg: #111111;
+            --darker-bg: #0a0a0a;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --text-color: #333333;
+            --text-light: #666666;
+            --border-color: #e0e0e0;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.15);
+            --transition: all 0.3s ease;
+            --radius: 12px;
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+            background-color: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 10px;
+            color: var(--dark-bg);
+        }
+
+        .section-title span {
+            color: var(--primary-color);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        /* Utilities */
+        .text-center {
+            text-align: center;
+        }
+
+        .text-white {
+            color: var(--white);
+        }
+
+        .text-yellow {
+            color: var(--primary-color);
+        }
+
+        .bg-light {
+            background-color: var(--light-bg);
+        }
+
+        .bg-dark {
+            background-color: var(--dark-bg);
+        }
+
+        .mt-3 {
+            margin-top: 1rem;
+        }
+
+        .mt-4 {
+            margin-top: 2rem;
+        }
+
+        .rounded-img {
+            border-radius: var(--radius);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: var(--transition);
+            gap: 8px;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--dark-bg);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--hover-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border-color: var(--dark-bg);
+            color: var(--dark-bg);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--dark-bg);
+            color: var(--white);
+        }
+
+        .btn-dark {
+            background-color: var(--dark-bg);
+            color: var(--white);
+        }
+
+        .btn-dark:hover {
+            background-color: #333;
+        }
+
+        .btn-sm {
+            padding: 8px 16px;
+            font-size: 0.9rem;
+        }
+
+        .btn-block {
+            display: flex;
+            width: 100%;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: var(--dark-bg);
+            color: var(--white);
+            text-align: center;
+            padding: 8px 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* Header */
+        .header {
+            background-color: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        .header.scrolled {
+            padding: 5px 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--dark-bg);
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--primary-color);
+        }
+
+        .nav-list {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-link {
+            font-weight: 600;
+            color: var(--text-color);
+            font-size: 1rem;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--dark-bg);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 60px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            overflow: hidden;
+        }
+
+        .hero-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .hero-content {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(255, 215, 0, 0.2);
+            color: var(--dark-bg);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            color: var(--dark-bg);
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero-image img {
+            border-radius: 20px;
+            box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        /* Trust Section */
+        .trust-section {
+            padding: 40px 0;
+            background-color: var(--white);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .trust-item {
+            padding: 20px;
+        }
+
+        .trust-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .trust-item h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .trust-item p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Categories */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .category-card {
+            position: relative;
+            border-radius: var(--radius);
+            overflow: hidden;
+            aspect-ratio: 4/5;
+            background: #000;
+        }
+
+        .category-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.7;
+            transition: transform 0.5s ease;
+        }
+
+        .category-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            color: var(--white);
+        }
+
+        .category-content h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .category-card:hover img {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+
+        /* Featured Products */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 20px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            border: 1px solid var(--border-color);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary-color);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--primary-color);
+            color: var(--dark-bg);
+            padding: 4px 10px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            border-radius: 4px;
+            z-index: 1;
+        }
+
+        .product-img {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .product-img img {
+            max-height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover .product-img img {
+            transform: scale(1.05);
+        }
+
+        .product-info h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .price {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .price .current {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--dark-bg);
+        }
+
+        .price .original {
+            text-decoration: line-through;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Services */
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+            border-bottom: 3px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-bottom-color: var(--primary-color);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(255, 215, 0, 0.1);
+            color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 20px;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-icon {
+            background: var(--primary-color);
+            color: var(--dark-bg);
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Why Choose */
+        .why-choose .container {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .why-content {
+            flex: 1;
+        }
+
+        .why-list {
+            margin-top: 30px;
+        }
+
+        .why-list li {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .why-list i {
+            font-size: 1.5rem;
+            margin-top: 2px;
+        }
+
+        .why-image {
+            flex: 1;
+        }
+
+        .why-image img {
+            border: 5px solid var(--primary-color);
+        }
+
+        /* Reviews */
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .review-card {
+            background: var(--light-bg);
+            padding: 30px;
+            border-radius: var(--radius);
+            text-align: center;
+            position: relative;
+        }
+
+        .review-card::before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 4rem;
+            color: rgba(0, 0, 0, 0.05);
+            font-family: serif;
+        }
+
+        .stars {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .review-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+
+        .review-author {
+            font-weight: 700;
+        }
+
+        /* CTA Banner */
+        .cta-banner {
+            background: var(--primary-color);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .cta-container h2 {
+            font-size: 2.5rem;
+            color: var(--dark-bg);
+            margin-bottom: 15px;
+        }
+
+        .cta-container p {
+            font-size: 1.2rem;
+            color: var(--darker-bg);
+            margin-bottom: 30px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Location */
+        .location-content {
+            display: flex;
+            background: var(--white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            margin-top: 40px;
+        }
+
+        .contact-info {
+            flex: 1;
+            padding: 40px;
+            background: var(--dark-bg);
+            color: var(--white);
+        }
+
+        .info-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .info-item i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .info-item h4 {
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .info-item p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+        }
+
+        .map-container {
+            flex: 1;
+            min-height: 400px;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--darker-bg);
+            color: var(--white);
+            padding-top: 60px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .brand-col p {
+            color: rgba(255, 255, 255, 0.6);
+            margin: 20px 0;
+            max-width: 300px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: var(--white);
+        }
+
+        .social-links a:hover {
+            background: var(--primary-color);
+            color: var(--dark-bg);
+        }
+
+        .footer-col h4 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--primary-color);
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px 0;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Floating WhatsApp */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 2s infinite;
+        }
+
+        .floating-whatsapp:hover {
+            background-color: #1ebe57;
+            color: white;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal {
+            background: var(--white);
+            width: 90%;
+            max-width: 450px;
+            border-radius: var(--radius);
+            padding: 40px;
+            position: relative;
+            transform: translateY(-20px);
+            transition: var(--transition);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-overlay.active .modal {
+            transform: translateY(0);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-light);
+        }
+
+        .modal-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .modal-header h3 {
+            font-size: 1.8rem;
+            color: var(--dark-bg);
+        }
+
+        .modal-header p {
+            color: var(--text-light);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.2);
+        }
+
+        .form-success {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .form-success i {
+            font-size: 3rem;
+            color: #25D366;
+            margin-bottom: 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+
+            .hero-container,
+            .why-choose .container,
+            .location-content {
+                flex-direction: column;
+            }
+
+            .hero-title {
+                font-size: 2.8rem;
+            }
+
+            .category-grid,
+            .trust-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                height: 70px;
+            }
+
+            .nav {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: var(--white);
+                flex-direction: column;
+                align-items: center;
+                padding-top: 40px;
+                transition: var(--transition);
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav.active {
+                left: 0;
+            }
+
+            .nav-list {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .hero-title {
+                font-size: 2.2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .category-grid,
+            .trust-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section {
+                padding: 50px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <p>Offer: Get 10% off on your first repair! Use code: YUTH10 &nbsp; | &nbsp; Call: +91-9876543210</p>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">YUTH <span>MOBILE</span></a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#categories" class="nav-link">Shop</a></li>
+                    <li><a href="#services" class="nav-link">Repairs</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-primary btn-sm" onclick="openLeadModal()">Get Offer</button>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">🔥 Limited Time Offer</span>
+                <h1 class="hero-title">Best Mobile & Smartwatch Deals in Your City</h1>
+                <p class="hero-subtitle">Latest Smartphones | Smartwatches | Premium Accessories | Expert Repair
+                    Services</p>
+                <div class="hero-buttons">
+                    <a href="#featured" class="btn btn-primary">Shop Now</a>
+                    <a href="https://wa.me/919876543210" target="_blank" class="btn btn-outline"><i
+                            class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Placeholder for Hero Image -->
+                <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&q=80&w=800"
+                    alt="Latest Smartphones">
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Building Section -->
+    <section class="trust-section" id="trust">
+        <div class="container trust-grid">
+            <div class="trust-item">
+                <div class="trust-icon"><i class="fas fa-certificate"></i></div>
+                <h3>100% Genuine</h3>
+                <p>Authentic products</p>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon"><i class="fas fa-tags"></i></div>
+                <h3>Best Price</h3>
+                <p>Unbeatable guarantee</p>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon"><i class="fas fa-tools"></i></div>
+                <h3>Expert Repair</h3>
+                <p>Fast & reliable service</p>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon"><i class="fas fa-users"></i></div>
+                <h3>1000+ Happy</h3>
+                <p>Satisfied customers</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="categories section" id="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by <span>Category</span></h2>
+            <div class="category-grid">
+                <a href="#featured" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&q=80&w=600"
+                        alt="Smartphones">
+                    <div class="category-content">
+                        <h3>Smartphones</h3>
+                    </div>
+                </a>
+                <a href="#featured" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&q=80&w=600"
+                        alt="Smartwatches">
+                    <div class="category-content">
+                        <h3>Smartwatches</h3>
+                    </div>
+                </a>
+                <a href="#featured" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1572569432711-4f811cb208ea?auto=format&fit=crop&q=80&w=600"
+                        alt="Accessories">
+                    <div class="category-content">
+                        <h3>Accessories</h3>
+                    </div>
+                </a>
+                <a href="#featured" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?auto=format&fit=crop&q=80&w=600"
+                        alt="Refurbished Phones">
+                    <div class="category-content">
+                        <h3>Refurbished</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured section bg-light" id="featured">
+        <div class="container">
+            <h2 class="section-title">Trending <span>Products</span></h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-badge">Top Seller</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1616348436168-de43ad0db179?auto=format&fit=crop&q=80&w=400"
+                            alt="iPhone 14 Pro">
+                    </div>
+                    <div class="product-info">
+                        <h3>Apple iPhone 14 Pro</h3>
+                        <div class="price">
+                            <span class="current">₹99,999</span>
+                            <span class="original">₹1,29,900</span>
+                        </div>
+                        <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20the%20iPhone%2014%20Pro"
+                            target="_blank" class="btn btn-outline btn-block">Enquire Now</a>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-badge">10% Off</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&q=80&w=400"
+                            alt="Samsung Galaxy S23">
+                    </div>
+                    <div class="product-info">
+                        <h3>Samsung Galaxy S23</h3>
+                        <div class="price">
+                            <span class="current">₹74,999</span>
+                            <span class="original">₹89,999</span>
+                        </div>
+                        <a href="https://wa.me/919876543210" target="_blank" class="btn btn-outline btn-block">Enquire
+                            Now</a>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&q=80&w=400"
+                            alt="Apple Watch Series 8">
+                    </div>
+                    <div class="product-info">
+                        <h3>Apple Watch Series 8</h3>
+                        <div class="price">
+                            <span class="current">₹39,900</span>
+                            <span class="original">₹45,900</span>
+                        </div>
+                        <a href="https://wa.me/919876543210" target="_blank" class="btn btn-outline btn-block">Buy
+                            Now</a>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1606220588913-b3aacb4b2f46?auto=format&fit=crop&q=80&w=400"
+                            alt="AirPods Pro">
+                    </div>
+                    <div class="product-info">
+                        <h3>AirPods Pro (2nd Gen)</h3>
+                        <div class="price">
+                            <span class="current">₹22,900</span>
+                            <span class="original">₹26,900</span>
+                        </div>
+                        <a href="https://wa.me/919876543210" target="_blank" class="btn btn-outline btn-block">Buy
+                            Now</a>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-badge">Refurbished</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&q=80&w=400"
+                            alt="iPhone 12">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 12 (Refurbished)</h3>
+                        <div class="price">
+                            <span class="current">₹34,990</span>
+                            <span class="original">₹49,900</span>
+                        </div>
+                        <a href="https://wa.me/919876543210" target="_blank" class="btn btn-outline btn-block">Enquire
+                            Now</a>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&q=80&w=400"
+                            alt="Wireless Earbuds">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sony WF-1000XM4</h3>
+                        <div class="price">
+                            <span class="current">₹16,990</span>
+                            <span class="original">₹19,990</span>
+                        </div>
+                        <a href="https://wa.me/919876543210" target="_blank" class="btn btn-outline btn-block">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+        <div class="container">
+            <h2 class="section-title">Premium <span>Repair Services</span></h2>
+            <p class="section-subtitle">Quick, reliable, and affordable repair services for all brands.</p>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Screen Replacement</h3>
+                    <p>High-quality screen replacements done within 60 minutes with warranty.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-battery-full"></i></div>
+                    <h3>Battery Replacement</h3>
+                    <p>Is your phone draining too fast? Get a genuine battery replacement.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-sync-alt"></i></div>
+                    <h3>Software Update</h3>
+                    <p>Fix hanging issues, flash new OS, or unlock your device safely.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-tint"></i></div>
+                    <h3>Water Damage</h3>
+                    <p>Advanced liquid damage repair to bring your dead phone back to life.</p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button class="btn btn-primary" onclick="openLeadModal()">Book a Repair Repair</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose section bg-dark text-white" id="why-choose">
+        <div class="container">
+            <div class="why-content">
+                <h2 class="section-title text-white">Why Choose <span>Yuth Mobile?</span></h2>
+                <ul class="why-list">
+                    <li><i class="fas fa-check-circle text-yellow"></i> <strong>Competitive Pricing:</strong> Best rates
+                        in the market.</li>
+                    <li><i class="fas fa-check-circle text-yellow"></i> <strong>Latest Models Available:</strong> We
+                        stock the newest launches first.</li>
+                    <li><i class="fas fa-check-circle text-yellow"></i> <strong>Quick Repair Service:</strong> Most
+                        repairs done in under an hour.</li>
+                    <li><i class="fas fa-check-circle text-yellow"></i> <strong>Local Trusted Shop:</strong> Serving our
+                        community with integrity for years.</li>
+                </ul>
+            </div>
+            <div class="why-image">
+                <img src="https://images.unsplash.com/photo-1559814421-2a420b9e86dd?auto=format&fit=crop&q=80&w=600"
+                    alt="Tech Shop" class="rounded-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews section" id="reviews">
+        <div class="container">
+            <h2 class="section-title">What Our <span>Customers Say</span></h2>
+            <div class="review-grid">
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Bought iPhone 14 from Yuth Mobile. Best price in the market. Very genuine
+                        and polite staff. Highly recommend!"</p>
+                    <h4 class="review-author">- Rahul S.</h4>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">"Got my samsung screen replaced here within 45 mins. Works perfectly and
+                        looks brand new. Good service!"</p>
+                    <h4 class="review-author">- Priya M.</h4>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Huge collection of smartwatches and covers. Loved the vibe of the store. Def
+                        coming back!"</p>
+                    <h4 class="review-author">- Amit K.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- High Conversion CTA Banner -->
+    <section class="cta-banner">
+        <div class="container cta-container">
+            <h2>Get the Best Deals Today!</h2>
+            <p>Don't miss out on exclusive discounts. limited stock available.</p>
+            <div class="cta-buttons">
+                <a href="tel:+919876543210" class="btn btn-dark"><i class="fas fa-phone-alt"></i> Call Now</a>
+                <a href="https://wa.me/919876543210" target="_blank" class="btn btn-primary"><i
+                        class="fab fa-whatsapp"></i> WhatsApp Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Map -->
+    <section class="location section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Visit Our <span>Store</span></h2>
+            <div class="location-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Main Tech Street, Electronics Hub,<br>Your City, State 123456</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@yuthmobile.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Mon - Sun: 10:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="btn btn-primary mt-3">Get Directions</a>
+                </div>
+                <div class="map-container">
+                    <!-- Embed Google Map -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.562064115915!2d77.03796441508215!3d28.612089491752834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05dd375fd3f9%3A0xe84a96b79c32cd7!2sSector%203%2C%20Dwarka%2C%20New%20Delhi%2C%20Delhi%20110078!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <a href="#" class="logo text-white">YUTH <span>MOBILE</span></a>
+                <p>Your trusted destination for smartphones, smartwatches, accessories, and professional repair
+                    services.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#categories">Shop</a></li>
+                    <li><a href="#services">Repairs</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Screen Repair</a></li>
+                    <li><a href="#">Battery Replacement</a></li>
+                    <li><a href="#">Software Update</a></li>
+                    <li><a href="#">Water Damage</a></li>
+                    <li><a href="#">Sell Old Phone</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 Yuth Mobile. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919876543210" class="floating-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Lead Capture Form / Offer Popup -->
+    <div class="modal-overlay" id="leadModal">
+        <div class="modal">
+            <button class="close-modal" onclick="closeLeadModal()"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h3>⚡ Special Deal!</h3>
+                <p>Get up to 15% OFF on accessories & repairs.</p>
+            </div>
+            <form id="leadForm" class="modal-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your mobile number" required pattern="[0-9]{10}">
+                </div>
+                <div class="form-group">
+                    <label for="interest">Interested In</label>
+                    <select id="interest" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="buy_phone">Buy Smartphone</option>
+                        <option value="buy_watch">Buy Smartwatch</option>
+                        <option value="repair">Mobile Repair</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Claim My Offer</button>
+            </form>
+            <div id="formSuccess" class="form-success" style="display: none;">
+                <i class="fas fa-check-circle"></i>
+                <h4>Offer Claimed!</h4>
+                <p>We will contact you shortly.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.getElementById('nav');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            const icon = hamburger.querySelector('i');
+            if (nav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                hamburger.querySelector('i').classList.remove('fa-times');
+                hamburger.querySelector('i').classList.add('fa-bars');
+            });
+        });
+
+        // Modal Logic
+        const leadModal = document.getElementById('leadModal');
+        const leadForm = document.getElementById('leadForm');
+        const formSuccess = document.getElementById('formSuccess');
+
+        function openLeadModal() {
+            leadModal.classList.add('active');
+            // Reset form states if reopened
+            leadForm.style.display = 'block';
+            formSuccess.style.display = 'none';
+            leadForm.reset();
+        }
+
+        function closeLeadModal() {
+            leadModal.classList.remove('active');
+        }
+
+        // Close modal on outside click
+        window.addEventListener('click', (e) => {
+            if (e.target === leadModal) {
+                closeLeadModal();
+            }
+        });
+
+        // Form Submission
+        leadForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Here you would typically send data to a backend via fetch/axios
+            // For now, we simulate a successful submission
+
+            const submitBtn = leadForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerText;
+            submitBtn.innerText = 'Submitting...';
+            submitBtn.disabled = true;
+
+            setTimeout(() => {
+                leadForm.style.display = 'none';
+                formSuccess.style.display = 'block';
+                submitBtn.innerText = originalText;
+                submitBtn.disabled = false;
+
+                // Auto close after 3 seconds
+                setTimeout(() => {
+                    closeLeadModal();
+                }, 3000);
+            }, 1500);
+        });
+
+        // Auto-show popup after 10 seconds of page load
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                // Only show if user hasn't already opened it manually
+                if (!leadModal.classList.contains('active') && !sessionStorage.getItem('popupShown')) {
+                    openLeadModal();
+                    sessionStorage.setItem('popupShown', 'true');
+                }
+            }, 10000);
+        });
+
+    </script>
+</body>
+
+</html>
